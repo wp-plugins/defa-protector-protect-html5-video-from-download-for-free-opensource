@@ -11,8 +11,10 @@
  }
 
 $_SESSION['url'] = $pageURL;
-$plugin_url = plugins_url();
-
+$file = dirname(__FILE__) . '/defaprotector.php';
+$plugin_url = plugin_dir_url($file);
+// Output something like: http://example.com/wp-content/plugins/your-plugin/
+$plugin_path = plugin_dir_path($file);
 $out2 = ob_get_clean();
 if(strpos($out2,"<safe")==false){
 ?>
@@ -65,7 +67,8 @@ $_SESSION['defat'] = 1;
 }else{
 $_SESSION['defat'] = $_SESSION['defat'] + 1;
 }
-$defa  = plugins_url();
+$file = dirname(__FILE__) . '/defaprotector.php';
+$defa= plugin_dir_url($file);
 $_SESSION['x'.$matches['2'].$_SESSION['defat']]=0;
 $_SESSION['defa'.$matches['2'].$_SESSION['defat']] = md5(time()."Defa Protector");
 $_SESSION['imdefa'.$_SESSION['defat']]=md5('Defa').base64_encode(base64_encode($matches['2']));
