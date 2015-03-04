@@ -1,6 +1,8 @@
 <?php
 //Written By Juthawong Naisanguansee
-
+if(session_id() == ''){
+     session_start(); 
+}
  $pageURL = 'http';
  if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
  $pageURL .= "://";
