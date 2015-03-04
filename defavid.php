@@ -1,7 +1,9 @@
 <?php
 
 ob_start();
-session_start();
+if(session_id() == ''){
+     session_start(); 
+}
 $md5defa = md5('Defa');
 $t = (int)$_GET['defat'];
 
