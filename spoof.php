@@ -1,0 +1,1 @@
+<h1>We detect that you spoofing user agent or disable javascript</h1>
