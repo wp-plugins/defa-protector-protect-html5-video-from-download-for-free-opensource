@@ -6,8 +6,7 @@ if(session_id() == ''){
 }
 $md5defa = md5('Defa');
 $t = (int)$_GET['defat'];
-
-$filedefa = str_replace($md5defa,'',$_REQUEST['im']);
+$filedefa = str_replace($md5defa,'',$_SESSION['file'.$t]);
 $file = base64_decode(base64_decode($filedefa));
 $defa = base64_decode(base64_decode($filedefa));
 $defaurl = get_headers($file, 1);
