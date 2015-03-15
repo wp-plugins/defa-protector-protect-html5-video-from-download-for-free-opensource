@@ -92,7 +92,7 @@ $ua = strtolower($_SERVER['HTTP_USER_AGENT']);
 
 $header = http_response_code();
 $header2 = getallheaders();
-if($header==200&&$header2['Accept']!=""){
+if($header==200&&$header2['Accept']!=""&&isset($_SERVER['HTTP_RANGE'])){
 
 $_SESSION['x'.$defa.$t] = $_SESSION['x'.$defa.$t] + 1;
 //Written By Juthawong Naisanguansee at Ampare Engine
