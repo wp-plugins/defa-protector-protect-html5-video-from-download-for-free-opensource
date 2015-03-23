@@ -4,6 +4,7 @@ ob_start();
 if(session_id() == ''){
      session_start(); 
 }
+$window = addslashes(strip_tags($_GET['window']));
 $md5defa = md5('Defa');
 $t = (int)$_GET['defat'];
 $filedefa = str_replace($md5defa,'',$_SESSION['file'.$t]);
@@ -24,8 +25,9 @@ function isMobile() {
 $ua = strtolower($_SERVER['HTTP_USER_AGENT']);
     return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $ua);
 }
-
+if(isset($_SESSION['jsenable'.$window])){
 if( isset($_SERVER['HTTP_RANGE'])||$_SESSION['x'.$defa.$t]==0&&$browser||$_SESSION['x'.$defa.$t]==0&&$msie||$_SESSION['x'.$defa.$t]==0&&isMobile()||$_SESSION['x'.$defa.$t]==0&&$mobilei){
+
 
 $_SESSION['x'.$defa.$t] = $_SESSION['x'.$defa.$t] + 1;
 //Written By Juthawong Naisanguansee at Ampare Engine
@@ -49,5 +51,6 @@ array_map("header",$http_response_header);
 
 readfile($file,false,$cong);
 die();
+}
 }
 ?>
