@@ -22,7 +22,7 @@ if(strpos($out2,"<safe")==false){
 $window = md5(time());
 $_SESSION['window'] = $window;
 ?>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+<script src="<?php echo $plugin_url ?>jquery-1.11.2.min.js"></script>
 <script>
 $.ajax({
   type: "POST",
