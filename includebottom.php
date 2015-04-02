@@ -22,9 +22,8 @@ if(strpos($out2,"<safe")==false){
 $window = md5(time());
 $_SESSION['window'] = $window;
 ?>
-<script src="<?php echo $plugin_url ?>jquery-1.11.2.min.js"></script>
 <script>
-$.ajax({
+jQuery.ajax({
   type: "POST",
   url: "<?php echo $plugin_url;?>enable.php",
 });
