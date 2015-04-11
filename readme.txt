@@ -14,6 +14,10 @@ Protect your html5 video from being downloaded or stolen automatically with the 
 
 Protect your html5 video from being downloaded or stolen automatically with the latest technology. We automatically bind the video and audio tag prevent user from accessing the real video file which make your video safe from special algorithm
 
+For More Security and Hide MediaFallback Link. Please use Secure HTML5 Video Player
+
+Defa Protector FAQ : http://www.juthawong.com/defa-protector-faq/
+
 
 == Installation ==
 
