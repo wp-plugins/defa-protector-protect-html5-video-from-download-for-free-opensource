@@ -28,11 +28,17 @@ Defa Protector FAQ : http://www.juthawong.com/defa-protector-faq/
 
 = A question that someone might have =
 
+
 An answer to that question.
+
 
 What do these software doing?
 
 It protect your html5 video from download but doesn't protect from screen recording
+
+I see a media fallback link ( unprotect video link ) in video. How should I fix?
+
+These are usually comes with Wordpress Built in Video Player. Change it to Secure HTML5 Video Player instead. The problems gone and video load a lot faster
 
 Why some browser cannot play the video?
 
