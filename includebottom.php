@@ -3,16 +3,10 @@
 if(session_id() == ''){
      session_start(); 
 }
- $pageURL = 'http';
- if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
- $pageURL .= "://";
- if ($_SERVER["SERVER_PORT"] != "80") {
-  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
- } else {
-  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
- }
-
-$_SESSION['url'] = $pageURL;
+error_reporting(0);
+$out2 = ob_get_contents();
+if(strpos($out2, "<video")||strpos($out2, "<audio")||strpos($out2, "<source")){
+     ob_clean();
 $file = dirname(__FILE__) . '/defaprotector.php';
 $plugin_url= plugin_dir_url($file);
 $plugin_url = wp_make_link_relative($plugin_url);
@@ -60,5 +54,5 @@ $mes = preg_replace_callback("/(<audio[^>]*src *= *[\"']?)([^\"']*)/i", getURL, 
 echo $mes;
 }else{
 echo $out2;
-}
+}}
 ?>
