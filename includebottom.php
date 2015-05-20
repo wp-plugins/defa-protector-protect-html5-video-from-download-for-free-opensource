@@ -10,8 +10,6 @@ if(strpos($out2, "<video")||strpos($out2, "<audio")||strpos($out2, "<source")){
 $file = dirname(__FILE__) . '/defaprotector.php';
 $plugin_url= plugin_dir_url($file);
 $plugin_url = wp_make_link_relative($plugin_url);
-
-$out2 = ob_get_clean();
 if(strpos($out2,"<safe")==false){
 $window = md5(time());
 $_SESSION['window'] = $window;
