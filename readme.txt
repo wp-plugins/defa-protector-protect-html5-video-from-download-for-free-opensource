@@ -18,7 +18,9 @@ For More Security and Hide MediaFallback Link. Please use Secure HTML5 Video Pla
 
 Defa Protector FAQ : http://www.juthawong.com/defa-protector-faq/
 
+Tips : Why I can download video ?
 
+If you already watch an unprotect video in likely to be in your cache system which make you able to save video. Try clear all browser cache and try again that it works or not ;)
 == Installation ==
 
 1. Upload `defaprotector` to the `/wp-content/plugins/` directory
@@ -28,6 +30,9 @@ Defa Protector FAQ : http://www.juthawong.com/defa-protector-faq/
 
 = A question that someone might have =
 
+Why I can download video ?
+
+If you already watch an unprotect video in likely to be in your cache system which make you able to save video. Try clear all browser cache and try again that it works or not ;)
 
 An answer to that question.
 
