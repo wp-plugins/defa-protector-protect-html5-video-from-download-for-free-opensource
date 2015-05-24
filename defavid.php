@@ -1,5 +1,5 @@
 <?php
-//This version using Ampare Protector Professional Technology. We give it for free to the world. Please donate us : http://www.juthawong.com/donate
+//This version using Ampare Protector Professional Technology. We give it for free to the world that mean I lose a chance of getting 200,000 USD for every download user. Please donate us : http://www.juthawong.com/donate
 ob_start();
 if(session_id() == ''){
      session_start(); 
