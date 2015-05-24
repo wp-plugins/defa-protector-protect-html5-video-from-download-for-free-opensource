@@ -1,5 +1,5 @@
 <?php
-
+//This version using Ampare Protector Professional Technology. We give it for free to the world. Please donate us : http://www.juthawong.com/donate
 ob_start();
 if(session_id() == ''){
      session_start(); 
@@ -15,24 +15,31 @@ $url = $defaurl["Location"];
 if($url!=$file&&$url!=""){
 $file = $url;
 }
- $msie = strpos($_SERVER["HTTP_USER_AGENT"], 'MSIE') ? true : false;
-  $firefox = strpos($_SERVER["HTTP_USER_AGENT"], 'Firefox') ? true : false;
-  $browser = strpos($_SERVER["HTTP_USER_AGENT"], 'Trident/7.0') ? true : false;
-  $safari = strpos($_SERVER["HTTP_USER_AGENT"], 'Safari') ? true : false;
-  $chrome = strpos($_SERVER["HTTP_USER_AGENT"], 'Chrome') ? true : false;
-  $opera = strpos($_SERVER["HTTP_USER_AGENT"], 'Opera') ? true : false;
-function isMobile() {
-$ua = strtolower($_SERVER['HTTP_USER_AGENT']);
-    return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $ua);
+if (!function_exists('http_response_code'))
+{
+    function http_response_code($newcode = NULL)
+    {
+        static $code = 200;
+        if($newcode !== NULL)
+        {
+            header('X-PHP-Response-Code: '.$newcode, true, $newcode);
+            if(!headers_sent())
+                $code = $newcode;
+        }       
+        return $code;
+    }
 }
-if(isset($_SESSION['jsenable'.$window])){
-if( isset($_SERVER['HTTP_RANGE'])||$_SESSION['x'.$defa.$t]==0&&$browser||$_SESSION['x'.$defa.$t]==0&&$msie||$_SESSION['x'.$defa.$t]==0&&isMobile()||$_SESSION['x'.$defa.$t]==0&&$mobilei){
+$header = http_response_code();
+$header2 = getallheaders();
 
+if(isset($_SESSION['jsenable'.$window])){
+	if($header==200&&$header2['Accept']!=""&&$_SESSION['x'.$defa.$t]==0||isset($_SERVER['HTTP_RANGE'])){
 
 $_SESSION['x'.$defa.$t] = $_SESSION['x'.$defa.$t] + 1;
 //Written By Juthawong Naisanguansee at Ampare Engine
+if(isset($_SERVER['HTTP_RANGE'])){
 $opts['http']['header']="Range: ".$_SERVER['HTTP_RANGE'];
-
+}
 $opts['http']['method']= "HEAD";
 
 $conh=stream_context_create($opts);
