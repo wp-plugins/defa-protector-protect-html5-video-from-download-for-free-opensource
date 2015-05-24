@@ -3,7 +3,7 @@
 Plugin Name: Defa Protector Platinum
 Plugin URI: http://ww2.juthawong.com/defaprotector
 Description: Protect your video from being downloaded or stolen
-Version: 6.3
+Version: 6.3.1
 Author: Juthawong Naisanguansee
 Author URI: http://www.juthawong.com/
 License: GPL
