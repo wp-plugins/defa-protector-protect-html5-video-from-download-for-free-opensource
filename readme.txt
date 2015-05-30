@@ -11,12 +11,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Protect your html5 video from being downloaded or stolen automatically with the latest technology. 
 
 == Description ==
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ah7e6YHajj0" frameborder="0" allowfullscreen></iframe>
 
 Protect your html5 video from being downloaded or stolen automatically with the latest technology. We automatically bind the video and audio tag prevent user from accessing the real video file which make your video safe from special algorithm
 
 For More Security and Hide MediaFallback Link. Please use Secure HTML5 Video Player
 
 Defa Protector FAQ : http://www.juthawong.com/defa-protector-faq/
+Tips : How to disable defa protector on some video page?
+By Simpyl Add this html tag <safe></safe> it is going to avoid the page from protect by Defa Protector
 
 Tips : Why I can download video ?
 
@@ -29,6 +32,8 @@ If you already watch an unprotect video in likely to be in your cache system whi
 == Frequently asked questions ==
 
 = A question that someone might have =
+How to disable defa protector on some video page?
+By Simpyl Add this html tag <safe></safe> it is going to avoid the page from protect by Defa Protector
 
 Why I can download video ?
 
