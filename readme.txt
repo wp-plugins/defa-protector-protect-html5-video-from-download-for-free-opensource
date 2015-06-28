@@ -4,7 +4,7 @@ Donate link: http://www.juthawong.com/donate
 Tags: Defa Protector,Protect HTML5 Video From Downloaded,chrome,browser,idm,download,video,grabber,stop,download,prevent,block,firewall,prevent download,protect video download,stop video download,disable video download
 Requires at least: 3.3
 Tested up to: 4.2
-Stable tag: 6.3.1
+Stable tag: 6.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,7 +77,7 @@ http://sourceforge.net/p/defaprotecthtml5videodownload/
 
 
 == Upgrade notice ==
-
+Please Upgrade , We fix SSL Error and add new stuff
 
 
 == Arbitrary section 1 ==
